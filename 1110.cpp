@@ -20,7 +20,7 @@ int main() {
 				b = (a % 10) * 10 + (a / 10 + a % 10) % 10;
 			}
 			a = b;
-		
+			cout << a << endl;
 			cnt++;
 		}
 		cout << cnt;
