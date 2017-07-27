@@ -1,14 +1,10 @@
-#include <cstdio>
-#include <conio.h>
-#include <stdio.h>
-#include <iostream>
-#include <queue>
-#include <vector>
-#include <algorithm>
+#include<iostream>
+#include<cstdio>
+#include<queue>
 using namespace std;
 int m, n;
-int tomato[1001][1001];
-int depth[1001][1001];
+int tomato[10001][10001];
+int depth[10001][10001];
 queue<pair<int, int>> q;
 int arrx[4] = { 1,-1,0,0 };
 int arry[4] = { 0,0,1,-1 };
