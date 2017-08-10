@@ -41,8 +41,8 @@ int main() {
 	int n, m, v;
 	cin >> n >> m >> v;
 
-	adj.resize(n);
-	visited.resize(n, false);
+	adj.resize(n+1);
+	visited.resize(n+1, false);
 	int x, y;
 	for (int i = 0; i < m; ++i) {
 		cin >> x >> y;
