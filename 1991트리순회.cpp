@@ -6,7 +6,6 @@
 #include<vector>
 #include<math.h>
 using namespace std;
-char arr[26] = { 'A','B','C' };
 
 struct tree {
 	char val;
