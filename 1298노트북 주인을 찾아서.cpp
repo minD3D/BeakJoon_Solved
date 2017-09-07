@@ -3,7 +3,7 @@
 #include<vector>
 using namespace std;
 int n, m;
-bool adj[1002][1002];
+bool adj[102][5002];
 vector<int> type1, type2;
 vector<bool> visited;
 
@@ -36,16 +36,10 @@ int match() {
 int main() {
 	scanf("%d %d", &n, &m);
 	for (int i = 0; i < m; i++) {
-		int no;
-		scanf("%d", &no);
-		for (int j = 0; j < no; j++) {
-			int num;
-			cin >> num;
-			--num;
-			adj[i][num] = 1;
+		int no1,no2;
+		scanf("%d %d", &no1,&no2);
+		adj[no1-1][no2-1] = 1;
 		}
-	}
-
 	cout << match() << endl;
 	cin >> n;
 }
